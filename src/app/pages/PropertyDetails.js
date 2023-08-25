@@ -71,14 +71,19 @@ const PropertyDetails = () => {
                         </div>
 
                         {/* form */}
-                        <form>
-                            <input></input>
-                            <input></input>
-                            <input></input>
-                            <textarea></textarea>
-                            <div>
-                                <button>Send Message</button>
-                                <button>Call</button>
+                        <form flex flex-col gap-y-4>
+                            <input className='border border-gray-300 focus:border-violet-700 outline-none rounded w-full px-4 h-14 text-sm' type='text' placeholder='Name*'></input>
+                            <input className='border border-gray-300 focus:border-violet-700 outline-none rounded w-full px-4 h-14 text-sm' type= 'text'
+                            placeholder='Email*'></input>
+                            <input className='border border-gray-300 focus:border-violet-700 outline-none rounded w-full px-4 h-14 text-sm' type='text'
+                            placeholder='Phone*'></input>
+
+                            <textarea className='border border-gray-300 focus:border-violet-700 outline-none resize-none rounded w-full p-4 h-36 text-gray-400'
+                            placeholder='Message*' defaultValue='Hello i am interested in [Modern Apartment]'></textarea>
+                            <div className='flex gap-x-2'>
+                                <button className='bg-violet-700 hover:bg-violet-800 text-while rounded p-4 text-sm w-full transition' >Send Message</button>
+
+                                <button className='border border-violet-700 text-violet-700 hover:border-violet-500 hover:text-violet-500 rounded p-4 text-sm w-full transition' >Call</button>
                             </div>
                         </form>
                     </div>
